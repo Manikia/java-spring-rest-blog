@@ -27,7 +27,7 @@ public class DatabaseLoader implements ApplicationRunner {
     public List<Author> authors = new ArrayList<>();
 
     @Autowired
-    public DatabaseLoader(PostRepository postRepository) {
+    public DatabaseLoader(PostRepository postRepository, AuthorRepository authorRepository) {
         PostRepository PostRepository = this.postRepository;
         postRepository.saveAll(randomPosts);
     }
