@@ -11,7 +11,7 @@ import javax.persistence.OneToMany;
 import java.util.ArrayList;
 import java.util.List;
 
-
+@RepositoryRestResource(exported = false)
 public interface AuthorRepository extends JpaRepository<Author, Long> {
 
 }
